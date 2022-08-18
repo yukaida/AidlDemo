@@ -9,7 +9,7 @@
     <Button
         android:id="@+id/button_connect"
         android:layout_width="wrap_content"
-        android:layout_height="242dp"
+        android:layout_height="80dp"
         android:text="connect"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -17,7 +17,7 @@
     <Button
         android:id="@+id/button_disconnect"
         android:layout_width="wrap_content"
-        android:layout_height="242dp"
+        android:layout_height="80dp"
         android:text="disconnect"
         app:layout_constraintStart_toStartOf="@+id/button_connect"
         app:layout_constraintTop_toBottomOf="@+id/button_connect" />
@@ -25,8 +25,16 @@
     <Button
         android:id="@+id/button_getState"
         android:layout_width="wrap_content"
-        android:layout_height="243dp"
+        android:layout_height="80dp"
         android:text="getConnectState"
         app:layout_constraintStart_toStartOf="@+id/button_disconnect"
         app:layout_constraintTop_toBottomOf="@+id/button_disconnect" />
+
+    <Button
+        android:id="@+id/button_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="connectByMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

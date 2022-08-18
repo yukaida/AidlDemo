@@ -21,7 +21,10 @@ class RemoteService : Service() {
     //连接状态
     var connectionState = false
 
-    val handler = Handler(Looper.getMainLooper())
+    val handler = Handler(Looper.getMainLooper(), Handler.Callback {
+        Log.d(TAG, "handler message called")
+        true
+    })
 
     val remoteCallbackList = RemoteCallbackList<MessageReceiveListener>()
 

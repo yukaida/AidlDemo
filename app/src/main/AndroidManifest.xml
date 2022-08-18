@@ -14,10 +14,16 @@
         android:theme="@style/Theme.AidlTest"
         tools:targetApi="31">
         <service
+            android:name=".RemoteMessageService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remoteMessage"
+            ></service>
+        <service
             android:name=".RemoteService"
             android:enabled="true"
-            android:process=":remote"
-            android:exported="true"></service>
+            android:exported="true"
+            android:process=":remote" />
 
         <activity
             android:name=".MainActivity"
